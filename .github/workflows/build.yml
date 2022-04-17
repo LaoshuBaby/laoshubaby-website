@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
+          submodules: true
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup Nuxt.js
@@ -29,11 +29,11 @@ jobs:
         run: npm run generate
 
       - name: touch CNAME
-        run: echo "laoshubaby.moe" > CNAME
+        run: echo "laoshubaby.moe" > ./dist/CNAME
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/master' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
+          publish_dir: ./dist
