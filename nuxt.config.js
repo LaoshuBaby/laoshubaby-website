@@ -44,6 +44,7 @@ export default {
     /*
     ** Build configuration
     */
+    target: 'static',
     build: {
       /*
       ** You can extend webpack config here
