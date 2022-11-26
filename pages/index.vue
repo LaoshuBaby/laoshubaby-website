@@ -1,10 +1,9 @@
 <template>
   <div class="home">
-    <h1>What Can I Deploy to Static Apps?</h1>
     <div class="card-grid">
-      <img src="https://bpic.51yuansu.com/pic3/cover/03/59/68/5bd12ce49036d_610.jpg" alt="BLOCKED IN CHINA"/>
+      <img src="https://bpic.51yuansu.com/pic3/cover/03/59/68/5bd12ce49036d_610.jpg" alt="BLOCKED IN CHINA" width=200px />
       <div style="font-size:50px;">
-        <b>因相关法律法规，本页面不予展示</b>
+        <b><br/>因相关法律法规，本页面不予展示</b>
       </div>
     </div>
   </div>
