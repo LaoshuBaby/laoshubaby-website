@@ -2,6 +2,144 @@
 <html>
   <head>
     <title>友链</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/octicons@4.4.0/build/font/octicons.css"
+    />
   </head>
-  <body></body>
+  <body>
+    <p style="font-size: 18px; margin: 10px 0">友链</p>
+    既然是友链，那么在对应站点也一定能找得到鼠宝宝喔
+    <div class="linkList">
+      <style>
+        .linkList {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -10px; /* Adjust this value to add space between cards */
+        }
+
+        .linkCard {
+          width: calc(
+            20% - 20px
+          ); /* Adjust this value for the number of columns */
+          margin: 10px;
+          border: 1px solid #ddd; /* Light grey border for the card */
+          border-radius: 8px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for the card */
+        }
+
+        .card-title {
+          font-size: 18px;
+          margin: 10px;
+          padding: 0 10px;
+        }
+
+        .card-content {
+          background-color: #ffffe0; /* Pale yellow background */
+          padding: 15px; /* Add more padding if needed */
+          border-radius: 6px; /* Rounded corners for the content area */
+        }
+
+        .card-link {
+          text-decoration: none;
+          color: blue;
+          margin-left: 10px;
+          transition: color 0.2s ease; /* Smooth transition for the hover effect */
+        }
+
+        .card-link:hover {
+          color: darkblue; /* Darker blue color on hover */
+        }
+
+        .card-link:first-child {
+          margin-left: 0; /* No margin for the first link in the card */
+        }
+      </style>
+      <div class="linkCard">
+        <p class="card-title">VoidMartix</p>
+        <div style="font-family: 'octicons', sans-serif">
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+            "
+          >
+            <div style="margin-bottom: 10px">
+              <i
+                style="color: #0366d6"
+                class="octicon octicon-link-external"
+              ></i>
+              <a
+                href="http://www.voidmartix.work"
+                target="_blank"
+                style="text-decoration: none; color: #0366d6; margin-left: 5px"
+              >
+                http://www.voidmartix.work
+              </a>
+            </div>
+            <div>
+              <i style="color: #0366d6" class="octicon octicon-mark-github"></i>
+              <a
+                href="https://github.com/VoidmatrixHeathcliff"
+                target="_blank"
+                style="text-decoration: none; color: #0366d6; margin-left: 5px"
+              >
+                https://github.com/VoidmatrixHeathcliff
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="linkCard">
+        <p class="card-title">ᡥᠠᡳᡤᡳᠶᠠ ᡥᠠᠯᠠ·ᠨᡝᡴᠣ 猫</p>
+        <div style="font-family: 'octicons', sans-serif">
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+            "
+          >
+            <div style="margin-bottom: 10px">
+              <i
+                style="color: #0366d6"
+                class="octicon octicon-link-external"
+              ></i>
+              <a
+                href="https://blog.xinshijiededa.men/friends/"
+                target="_blank"
+                style="text-decoration: none; color: #0366d6; margin-left: 5px"
+              >
+                https://blog.xinshijiededa.men/friends/
+              </a>
+            </div>
+            <div>
+              <i style="color: #0366d6" class="octicon octicon-mark-github"></i>
+              <a
+                href="https://github.com/OverflowCat"
+                target="_blank"
+                style="text-decoration: none; color: #0366d6; margin-left: 5px"
+              >
+                https://github.com/OverflowCat
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="linkCard">
+        <p class="card-title">WIP</p>
+        <div class="card-content">
+          <a href="http://example.com" target="_blank" class="card-link">
+            <i class="octicon octicon-link-external"></i> 博客
+          </a>
+          <a href="https://no.thankyou" target="_blank" class="card-link">
+            <i class="octicon octicon-mark-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+      友情提示：部分朋友的用户名可能含有特殊Unicode字符，包括但不仅限于直排回鹘文字、RTL文字、CJK合字等，鼠宝宝会忠实的照抄
+      <!-- Add more cards as needed -->
+    </div>
+  </body>
 </html>
