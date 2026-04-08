@@ -6,7 +6,6 @@ DOMAIN="laoshubaby.moe"
 
 pair=[
     ("towait.","CNAME","laoshubaby.moe/pages/towait"),
-    ("towait.","CNAME","laoshubaby.moe/pages/towait"),
     ("environment.","CNAME","laoshubaby.moe/pages/environment"),
     ("vscode.","CNAME","laoshubaby.moe/pages/environment/vscode"),
     # ("vscode.","A","1.2.3.4"), # For situation that depoly on a VPS or Bare Metal machine.
