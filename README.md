@@ -1,28 +1,26 @@
 # LaoshuBaby
 
-~~GitHub Pages are deployed in `gh_pages` branch.~~
+[简体中文](https://github.com/laoshubaby/laoshubaby-website) | [English](https://www.youtube.com/watch?v=XfELJU1mRMg) | [日本語](https://www.youtube.com/watch?v=XfELJU1mRMg)
 
-index.html一把梭好了，毕竟不能一直404下去（虽然过段时间还会在挑模板和整活之间来回摇摆）
+-----
 
-暂缓放弃用nuxt.js搭的方案。
+这是鼠宝个人站点的相关代码。
 
-感觉目前博客生成也分不同派系了。
+`index.html` 是手工创作的访问检查网页，可用于测试国际互联网的连通性。（另有详细的调试信息回显页面正在开发中）
 
-一类是完全前端写的（Next.js/Nuxt.js）算是一个完整项目，没有足够的前端写界面和项目管理能力很难搞定；一类是存在模板然后可以直接改md的（如Jekyll、hugo（不知道Gatsby.js算不算））
+## 各目录功能介绍与项目详细内容
 
-所以这里是一些感觉相的中的模板，全都展示在这里，供想要建站的人挑选：
+* `/nya` 是一个独立的个人网站项目，具体做出啥取决于AI喂出啥，啥年头看着不好就会换
+* `/pages` 中的各个页面。通常是希望自己展示或者自己编写的内容。（例如自己主导的项目介绍等）
+* `/environment` 存放各个被视为环境的内容，主要是部署现有整体开源项目供自用。（例如Git站，在线代码编辑器等）
+* `/src` 仅存放所有生产用的代码。（例如自动CDN部署用的代码）
+将根据常用性和重要性，根据不同的技术进行生成。
 
-### Nuxt.js
+注意：
 
-+ https://github.com/academicpages/academicpages.github.io
-+ https://github.com/mmistakes/minimal-mistakes
+1. 根目录直接映射 `index.html` 用于展示主页作为整个站点的入口，除此以外其他任何页面都不放在根目录下面。
+2. 暂不制作 `/dist` 等用于 `gh-pages` 的编译产物文件夹。
 
-### Hugo
+## 其他
 
-+ icarus
-+ fluid
-
-（本来想再搞一个fluid或者icarus但是一想从nuxt换hugo也没什么进步或者新意无非是一个能调通一个调不通，核心都不是真的自己可控的，只是比较心水的，所以就不要再换文件夹搞了）
-
-就酱。
-
+没了，在写了
